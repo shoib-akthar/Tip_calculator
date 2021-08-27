@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Tip calculator </title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="splitter"> <p> S P L I</p><p>T T E R</p></div>
+  <div class="block">
+<div class="content">
+  <div class="left">
+   <div class="bilin"> <p class="bill">
+      Bill
+    </p>
+    <input id="bill" type="number" placeholder="0" >
+  </div>  
+   <div class="per"> <p class=seltip> Select Tip %</p>
+    <div class="btn">
+    <button>5%</button>
+    <button>10%</button>
+    <button>15%</button>
+    <button>25%</button>
+    <button>50%</button>
+    <input type="text" placeholder="Custom" id="custom">
+  </div>
+  </div>
+      <div class="numof">
+        <p class="numberof">
+          Number of People</p> 
+          <input id="numof" type="number" placeholder="0">
+          <span class="user"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+
+        </div>
+  </div>
+<div class="right">
+  <div class="firstline">
+  <div class="top"> <p>Tip Amount</p>
+           <p class="small"> / person</p>  </div>
+         <div> <input type="number" placeholder="$0.0"></div>
+        </div>
+        <div class="secondline">
+  <div class="bottom"> <p> Total</p>
+   <p class="sma"> / person</p></div>
+      <div><input type="number" placeholder="$0.0" id=""></div>
+  
+</div>
+    
+   <div class="rst"><button type="reset" class="rest">RESET</button ></div>
+  
+   </div>
+</div>
+  </div>
+<script src="app.js"></script>
+</html>

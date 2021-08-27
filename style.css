@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--Strong_cyan: hsl(172, 67%, 45%);
+--Verydarkcyan: hsl(183, 100%, 15%);
+--Darkgrayishcyan: hsl(186, 14%, 43%);
+--Darkgrayishcyan: hsl(184, 14%, 56%);
+--Lightgrayishcyan: hsl(185, 41%, 84%);
+--Lightgrayishcyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+}
+body{
+background:rgb(197,228,231);
+}
+.splitter{
+font-family: 'Space Mono', monospace;
+text-align: center;
+padding-top: 20px;
+font-size: 20px;
+font-weight: 700;
+color: #5e7a7d;
+}
+.block{
+    background: var(--White);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 480px;
+    width: 920px;
+    border-radius: 25px;
+}
+.content{
+    font-family: 'Space Mono', monospace;
+    padding: 33px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:left;
+}
+.content .left{
+    width: 415px;
+    max-height: 100%;
+    position: relative;
+    align-items: stretch;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: 'Space Mono', monospace;
+
+
+}
+.left>div{
+    padding-bottom: 25px;
+}
+.left input[type=number]{
+    width:380px ;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-align: right;
+    padding-right:10px;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(0,69,68);
+    background: var(--Lightgrayishcyan);
+
+}
+.left input[type=number]::placeholder{
+padding-right:10px;
+color:rgb(0,69,68) ;
+}
+.right{
+    background:var(--Verydarkcyan) ;
+    height: 415px;
+    width: 415px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 40px;
+    justify-content: space-evenly;
+    color: white;
+
+}
+.btn{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: 700;
+}
+.per{
+    color: #5e7a7d;
+}
+.per button{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 115px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 25px;
+    background: var(--Verydarkcyan);
+    color:white;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    
+    
+
+
+}
+.numof{
+    color: #5e7a7d;
+    font-weight: 700;
+}
+input[type=text]{
+    font-family: 'Space Mono', monospace;
+    width: 115px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align:center;
+    color: rgb(0,69,68);
+    font-size: 25px;
+    font-weight: bolder;
+}
+input[type=text]::placeholder{
+    padding-right:10px;
+    color:rgb(0,69,68) ;
+    }
+button[type=reset].rest{
+    margin-top: 100px ;
+    width: 335px;
+    height: 45px;
+    background-color:var(--Strong_cyan);
+    color: rgb(0,69,68);
+    font-weight: bold;
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    border-radius: 5px;
+   }
+   .bill{
+font-weight: 700;
+color: #5e7a7d;
+   }
+   .bilin::before{
+       content: '$';
+    position: relative;
+    top: 65px;
+    left: 15px;
+    opacity: 0.8;
+    font-size: 25px;
+   }
+   input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.user{
+    position: relative;
+    bottom: 5px;
+    right: 375px;
+}
+#bill:hover{
+    border:2px solid var(--Strong_cyan);
+    transition:0.2s ;
+}
+#numof:hover{
+    border:2px solid var(--Strong_cyan);
+    transition:0.2s ;
+}
+.btn button:hover{
+    border:2px solid var(--Strong_cyan);
+    background: var(--Strong_cyan);
+    transition: 0.3s;
+}
+.btn input[type=text]:hover{
+    border:2px solid var(--Strong_cyan);
+    text-align: right;
+    transition: 0.3s;
+}
+.rst button:hover{
+    background:2px rgb(197,228,231);
+    transition: 0.4s;
+}
+.small{
+    font-size: 12px; 
+    color: var(--Darkgrayishcyan);
+}
+.sma{
+    font-size: 12px;  
+    color: var(--Darkgrayishcyan); 
+}
+.right input[type=number]{
+background: transparent;
+border: none;
+outline: none;
+font-size: 40px;
+width:100px;
+color: var(--Strong_cyan);
+font-weight: 700;
+font-family: 'Space Mono', monospace;
+margin-right: 45px;
+}
+.right input[type=number]::placeholder{
+color: var(--Strong_cyan);
+}
+.firstline{
+    display: flex;
+    justify-content: space-between;
+}
+.secondline{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:950px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        padding:20px;
+    }
+    .block{
+        margin-top: 300px;
+        max-width: 100%;
+        height: auto;
+        padding:30px;
+    }
+    .splitter{
+        padding-top: 40px;
+    }
+    .content .left{
+        width: 320px;
+        max-height: 100%;
+        position: relative;
+        align-items: stretch;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        font-family: 'Space Mono', monospace;
+    }
+    .left>div{
+        padding-bottom: 15px;
+    }
+    .left input[type=number]{
+        width:300px ;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        text-align: right;
+        padding-right:10px;
+        box-sizing: border-box;
+        font-family: 'Space Mono', monospace;
+        font-size: 25px;
+        font-weight: 700;
+        color: rgb(0,69,68);
+        background: var(--Lightgrayishcyan);
+    
+    }
+    .per button{
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 140px;
+        height: 45px;
+        border-radius: 5px;
+        font-size: 25px;
+        background: var(--Verydarkcyan);
+        color:white;
+        font-family: 'Space Mono', monospace;
+       }
+       input[type=text]{
+        font-family: 'Space Mono', monospace;
+        margin-top: 10px;
+        width: 140px;
+        height: 45px;
+        outline: none;
+        border: none;
+    }
+    .right{
+        background:var(--Verydarkcyan) ;
+        height: 320px;
+        width: 320px;
+    }    
+    .right input[type=number]{
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 40px;
+        width:100px;
+        color: var(--Strong_cyan);
+        font-weight: 700;
+        font-family: 'Space Mono', monospace;
+        }
+        .right input[type=number]::placeholder{
+        color: var(--Strong_cyan);
+        }
+        button[type=reset].rest{
+            margin-top: 100px ;
+            width: 250px;
+            height: 45px;
+            background-color: rgb(159, 223,232);
+            color: rgb(0,69,68);
+            font-weight: bold;
+            font-family: 'Space Mono', monospace;
+            font-size: 15px;
+            border-radius: 5px;
+           }
+    }
